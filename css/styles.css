@@ -1,14 +1,43 @@
 
+body{
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+}
+
+header{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 40px;
+  margin-top: 30px;
+
+}
+
+#search {
+  border-radius: 5px;
+  border-color: grey;
+  margin: auto;
+  width: 50%;
+  height: 2.5rem;
+}
+
+#search[placeholder]{
+  padding-left: 10px;
+  opacity: 60%;
+  font-family: sans-serif;
+}
 
 
 .gallery{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-row-gap: 30px;
+  grid-gap: 20px;
   max-width: 75%;
   margin: auto;
 
 }
+
+
 
 img{
   justify-content: center;
